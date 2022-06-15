@@ -1,6 +1,5 @@
-import globals
 from threading import Thread
-
+import globals
 
 class Planet(Thread):
     def __init__(self, distance, terraform, size, name):
@@ -10,8 +9,15 @@ class Planet(Thread):
         self.size = size
         self.name = name
 
+    def nuke_detected(self):
+        while(self.terraform > 0):
+            before_percentage = self.terraform
+            while(before_percentage == self.terraform):
+                pass
+            print(f"[NUKE DETECTION] - The planet {self.name} was bombed. {self.terraform}% UNHABITABLE")
+
     def print_planet_info(self):
-        print(f"🪐 - [{self.name}] → {self.terraform}% HABITABLE")
+        print(f"🪐 - [{self.name}] → {self.terraform}% UNINHABITABLE")
 
     def run(self):
         globals.acquire_print()
@@ -22,4 +28,4 @@ class Planet(Thread):
             pass
 
         while(True):
-            pass
+            self.nuke_detected()

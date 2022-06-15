@@ -18,10 +18,10 @@ def main():
 
     sleep(0.5)
     print("Loading planets ...\n")
-    mars = Planet(620000, 0, 6779, 'MARS')
-    io = Planet(628300, 0, 3643, 'IO')
-    ganimedes = Planet(628300, 0, 5268, 'GANIMEDES')
-    europa = Planet(628300, 0, 3121, 'EUROPA')
+    mars = Planet(620000, 100, 6779, 'MARS')
+    io = Planet(628300, 100, 3643, 'IO')
+    ganimedes = Planet(628300, 100, 5268, 'GANIMEDES')
+    europa = Planet(628300, 100, 3121, 'EUROPA')
 
     mars.start()
     io.start()
@@ -44,11 +44,11 @@ def main():
 
     sleep(0.5)
     print("\nActivating Mines...\n")
-    oil_earth = Pipeline(500, 'EARTH')
-    oil_moon = Pipeline(200, 'MOON')
 
-    uranium_earth = StoreHouse(200, 'EARTH')
-    uranium_moon = StoreHouse(400, 'MOON')
+    oil_earth = Pipeline(0, 'EARTH', 500)
+    oil_moon = Pipeline(0, 'MOON', 200)
+    uranium_earth = StoreHouse(0, 'EARTH', 200)
+    uranium_moon = StoreHouse(0, 'MOON', 400)
 
     uranium_earth.start()
     uranium_moon.start()
