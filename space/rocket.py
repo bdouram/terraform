@@ -5,11 +5,15 @@ from time import sleep
 class Rocket:
 
     ################################################
-    # O CONSTRUTOR DA CLASSE NÃO PODE SER ALTERADA #
+    # O CONSTRUTOR DA CLASSE NÃO PODE SER ALTERADO #
     ################################################
     def __init__(self, type):
         self.id = randrange(1000)
         self.name = type
+        if(self.name == 'LION'):
+            self.fuel_cargo = 0
+            self.uranium_cargo = 0
+            
 
     def nuke(self, planet): # Permitida a alteração
         self.damage()

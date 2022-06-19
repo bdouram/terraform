@@ -1,5 +1,9 @@
 from threading import Lock
 
+#  A total alteração deste arquivo é permitida.
+#  Lembre-se de que algumas variáveis globais são setadas no arquivo simulation.py
+#  Portanto, ao alterá-las aqui, tenha cuidado de não modificá-las. 
+
 release_system = False
 mutex_print = Lock()
 planets = {}

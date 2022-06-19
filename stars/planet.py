@@ -2,11 +2,13 @@ from threading import Thread
 import globals
 
 class Planet(Thread):
-    def __init__(self, distance, terraform, size, name):
+
+    ################################################
+    # O CONSTRUTOR DA CLASSE NÃO PODE SER ALTERADO #
+    ################################################
+    def __init__(self, terraform,name):
         Thread.__init__(self)
-        self.distance = distance
         self.terraform = terraform
-        self.size = size
         self.name = name
 
     def nuke_detected(self):

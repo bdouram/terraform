@@ -9,6 +9,11 @@ from space.time import SimulationTime
 from mines.oil import Pipeline
 from mines.uranium import StoreHouse
 
+######################################################################
+#                                                                    #
+#              Não é permitida a alteração deste arquivo!            #
+#                                                                    #
+######################################################################
 
 def main():
 
@@ -18,10 +23,10 @@ def main():
 
     sleep(0.5)
     print("Loading planets ...\n")
-    mars = Planet(620000, 100, 6779, 'MARS')
-    io = Planet(628300, 100, 3643, 'IO')
-    ganimedes = Planet(628300, 100, 5268, 'GANIMEDES')
-    europa = Planet(628300, 100, 3121, 'EUROPA')
+    mars = Planet(100, 'MARS')
+    io = Planet(100, 'IO')
+    ganimedes = Planet(100, 'GANIMEDES')
+    europa = Planet(100, 'EUROPA')
 
     mars.start()
     io.start()

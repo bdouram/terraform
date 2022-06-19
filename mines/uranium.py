@@ -5,6 +5,12 @@ from time import sleep
 import globals
 
 
+######################################################################
+#                                                                    #
+#              Não é permitida a alteração deste arquivo!            #
+#                                                                    #
+######################################################################
+
 class StoreHouse(Thread):
 
     def __init__(self, unities, location, constraint):
