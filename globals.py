@@ -3,6 +3,10 @@ from threading import Lock
 #  A total alteração deste arquivo é permitida.
 #  Lembre-se de que algumas variáveis globais são setadas no arquivo simulation.py
 #  Portanto, ao alterá-las aqui, tenha cuidado de não modificá-las. 
+#  Você pode criar variáveis globais no código fora deste arquivo, contudo, agrupá-las em
+#  um arquivo como este é considerado uma boa prática de programação. Frameworks como o Redux,
+#  muito utilizado em frontend em libraries como o React, utilizam a filosofia de um store
+#  global de estados da aplicação e está presente em sistemas robustos pelo mundo.
 
 release_system = False
 mutex_print = Lock()
